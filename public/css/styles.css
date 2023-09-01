@@ -1,0 +1,189 @@
+
+
+body{
+    height: 100vh;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    /* justify-content: space-evenly; */
+    margin-top: 5%;
+}
+
+.math-tool{
+    background: rgb(21, 168, 7);
+    /* background: rgb(227, 100, 2); */
+    padding: 20px;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+
+.math-tool form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.orange{
+    background-color: orange;
+    box-shadow: -2px -2px 5px rgb(80, 255, 80), 2px 2px 5px rgb(203, 255, 80);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    box-shadow:none;
+    color: darkblue;
+}
+
+form input.equal{
+    width:135px;
+}
+
+form input.operator{
+    color:aliceblue;
+    background-color: rgb(6, 3, 99);
+    box-shadow: -2px -2px 5px rgb(80, 255, 80), 2px 2px 5px rgb(203, 255, 80);
+}
+
+hr {
+    margin-top: 50px;
+    margin-left: 32%;
+    margin-right: 32%;
+    border: 5px;
+    border-style: none none double;
+
+}
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.math-tool-two{
+    background: rgb(21, 168, 7);
+    padding: 20px;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+
+.math-tool-two form .display-two input {
+    border: 0;
+    outline: 0;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form .display-two input {
+    text-align: center;
+    flex: 1;
+    box-shadow:none;
+    color: darkblue;
+}
+
+form .display-two button {
+    background-color: rgb(255, 167, 2);
+    border: 0;
+    outline: 0;
+    width: 125px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 5px rgb(80, 255, 80), 2px 2px 5px rgb(203, 255, 80);
+    font-size: 25px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size:20px;
+};
+
+div .row{
+    display: grid;
+}
+
+.calculator-one{
+    display: inline-block;
+}
+
+.calculator-two {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1300px){
+    .calculator-one{
+        width: 40%;
+    }
+    .calculator-two{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .calculator-one{
+        width: 45%;
+    }
+    .calculator-two{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .calculator-one{
+        width: 45%;
+    }
+    .calculator-two{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .calculator-one{
+        width: 60%;
+    }
+    .calculator-two{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .calculator-one{
+        width: 80%;
+    }
+    .calculator-two{
+        width: 100%;
+    }
+}
